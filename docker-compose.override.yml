@@ -29,8 +29,8 @@ services:
       - 4200:4200
   semaphore:
     build:
-      context: ./semaphore
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: semaphore/Dockerfile
     restart: unless-stopped
     environment:
       SEMAPHORE_DB_DIALECT: sqlite
